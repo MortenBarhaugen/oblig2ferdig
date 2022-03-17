@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Billetter</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Billetter</h3>
+            <form class="form">
+                <div class="form-group">
+                    <label for="filmTittel">Velg film</label>
+                    <div id="filmTittel" class="dropdown">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="number" class="form-control" id="antall"/>
+                    <label for="antall" id="feilAntall"></label>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id="fornavn"/>
+                    <label for="fornavn" id="feilFornavn"></label>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id="etternavn"/>
+                    <label for="etternavn" id="feilEtternavn"></label>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnr</label>
+                    <input type="text" class="form-control" id="telefonnr"/>
+                    <label for="telefonnr" id="feilTelefonnr"></label>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text" class="form-control" id="epost"/>
+                    <label for="epost" id="feilEpost"></label>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="regBilletter()">Registrer</button><br/>
+        </div>
+        <div class="col-md-8">
+            <h3>Alle billetter:</h3>
+            <div id="billettene"></div>
+            <button class="btn btn-danger" onclick="slettBillettene()">Slett alle billetter</button>
+        </div>
+    </div>
+</div>
+<script src="billett4.js"></script>
+</body>
+</html>
